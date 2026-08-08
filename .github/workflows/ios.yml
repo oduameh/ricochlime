@@ -7,6 +7,8 @@ on:
   # Enable manual run
   workflow_dispatch:
   push:
+    branches:
+      - '**'
     tags:
       - '**'
 
@@ -32,10 +34,50 @@ jobs:
           buildNumber=$(grep -oP '(?<=version: ).*' pubspec.yaml | grep -oP '(?<=\+).*$')
           echo "buildNumber=$buildNumber" >> $GITHUB_OUTPUT
 
+  # Unsigned simulator build: verifies the iOS build compiles on every push.
+  # The resulting Runner.app only runs on the iOS Simulator,
+  # NOT on a physical iPhone (that requires Apple Developer signing,
+  # see the build-ios job below).
+  build-ios-simulator:
+    name: Build for iOS Simulator (unsigned)
+    runs-on: macos-latest
+    needs: get-version
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Flutter
+        uses: adil192/setup-flutter-submodule@v3
+        with:
+          flutter-path: submodules/flutter
+          cache-flutter: false
+          cache-pub: false
+          no-save-caches: true
+
+      - run: flutter pub get
+
+      - name: Build for the iOS Simulator
+        id: build
+        run: |
+          flutter build ios --no-pub --simulator
+
+          export appPath="Ricochlime_v${{ needs.get-version.outputs.buildName }}_simulator.app"
+          mv build/ios/iphonesimulator/Runner.app "$appPath"
+          echo "appPath=$appPath" >> $GITHUB_OUTPUT
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: Ricochlime-iOS-Simulator
+          path: ${{ steps.build.outputs.appPath }}
+
   build-ios:
     name: Build for iOS
     runs-on: macos-latest
     needs: get-version
+    # Signed builds need Apple Developer secrets,
+    # so only run them on version tags.
+    if: ${{ startsWith(github.ref, 'refs/tags/') }}
     env:
       APP_STORE_CONNECT_ISSUER_ID: ${{secrets.APP_STORE_CONNECT_ISSUER_ID}}
       APP_STORE_CONNECT_KEY_IDENTIFIER: ${{secrets.APP_STORE_CONNECT_KEY_IDENTIFIER}}
@@ -75,7 +117,7 @@ jobs:
         run: |
           keychain initialize
 
-          app-store-connect fetch-signing-files com.adilhanney.ricochlime \
+          app-store-connect fetch-signing-files com.oduameh.ricochlime \
             --platform IOS \
             --type IOS_APP_STORE \
             --certificate-key=@env:APP_STORE_CERTIFICATE_KEY \
