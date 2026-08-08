@@ -14,7 +14,6 @@ settingsPage:
   accessibility: Доступность
   hyperlegibleFont: Большой шрифт
   showUndoButton: Разрешить отмену бросков
-  showReflectionInAimGuide: Показывать отскок в прицельной траектории
   biggerBullets: Большие мячики
   maxFps: Максимальный FPS
   appInfo: О программе
@@ -40,7 +39,6 @@ restartGameDialog:
 tutorialPage:
   tutorial: Как играть
   dragAndRelease: Defeat the monsters by dragging to aim and releasing to shoot.
-  pointAndClick: Defeat the monsters by moving your mouse to aim and clicking to shoot.
   goldMonsters: Убив золотого монстра получаете монетку.
   greenMonsters: Убив зелёного монстра получаете дополнительный мячик.
   bounceOffWalls: Bounce your shots off the walls to hit the most monsters.

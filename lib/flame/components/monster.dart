@@ -6,6 +6,7 @@ import 'package:flame_forge2d/flame_forge2d.dart';
 import 'package:flutter/material.dart' hide Image;
 import 'package:ricochlime/flame/components/bullet.dart';
 import 'package:ricochlime/flame/components/health_bar.dart';
+import 'package:ricochlime/flame/components/row_entity.dart';
 import 'package:ricochlime/flame/ricochlime_game.dart';
 import 'package:ricochlime/utils/random_extension.dart';
 import 'package:ricochlime/utils/ricochlime_palette.dart';
@@ -38,7 +39,7 @@ enum KillReward {
 }
 
 /// A monster component.
-class Monster extends BodyComponent with ContactCallbacks {
+class Monster extends BodyComponent with ContactCallbacks implements RowEntity {
   // ignore: public_member_api_docs
   Monster({
     required this.initialPosition,
@@ -239,6 +240,7 @@ class Monster extends BodyComponent with ContactCallbacks {
   static const minPriority = -100;
 
   /// Moves a new monster in from the top of the screen
+  @override
   void moveInFromTop(Duration duration) {
     assert(position.y <= topGap, 'Monster must be at the top of the screen');
     _startMovement(
@@ -251,6 +253,7 @@ class Monster extends BodyComponent with ContactCallbacks {
   }
 
   /// Moves the monster down to the next row
+  @override
   void moveDown(Duration duration) {
     _startMovement(
       _MonsterMovement(

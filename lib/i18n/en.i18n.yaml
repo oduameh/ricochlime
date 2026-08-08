@@ -17,7 +17,6 @@ settingsPage:
   bgmVolume: Music volume
   sfxVolume: Sound effects volume
   showUndoButton: Allow undoing moves
-  showReflectionInAimGuide: Show reflection in aim guide
   biggerBullets: Bigger bullets
   maxFps: Max FPS
   showFpsCounter: Show FPS counter
@@ -39,8 +38,9 @@ restartGameDialog:
   yesImSure: Yes I'm sure!
 tutorialPage:
   tutorial: Tutorial
-  dragAndRelease: Defeat the monsters by dragging to aim and releasing to shoot.
-  pointAndClick: Defeat the monsters by moving your mouse to aim and clicking to shoot.
+  dragAndRelease: Drag left and right to move your soldier. They shoot automatically!
+  gates: Shoot through x2, x3 and +3 gates to multiply your bullets.
+  blocks: Blocks take lots of hits to break. Clear a path before they reach you!
   goldMonsters: After defeating a gold monster, you'll get a coin.
   greenMonsters: After defeating a green monster, you'll get an extra bullet.
   bounceOffWalls: Bounce your shots off the walls to hit the most monsters.

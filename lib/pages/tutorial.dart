@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:nes_ui/nes_ui.dart';
 import 'package:ricochlime/flame/components/background/background_tile.dart';
-import 'package:ricochlime/flame/ricochlime_game.dart';
 import 'package:ricochlime/i18n/strings.g.dart';
 import 'package:ricochlime/utils/ricochlime_palette.dart';
 import 'package:ricochlime/utils/sprite_painter.dart';
@@ -40,10 +39,42 @@ class TutorialPage extends StatelessWidget {
                     children: [
                       const MonsterWidget(spritePath: 'log_normal.png'),
                       Expanded(
-                        child: Text(
-                          RicochlimeGame.instance.pointAndClickEnabled
-                              ? t.tutorialPage.pointAndClick
-                              : t.tutorialPage.dragAndRelease,
+                        child: Text(t.tutorialPage.dragAndRelease),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      const _TutorialGraphic(
+                        child: FittedBox(
+                          child: Padding(
+                            padding: EdgeInsets.all(4),
+                            child: Text(
+                              'x2',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(child: Text(t.tutorialPage.gates)),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Expanded(child: Text(t.tutorialPage.blocks)),
+                      const SizedBox(width: 8),
+                      const _TutorialGraphic(
+                        child: FittedBox(
+                          child: Padding(
+                            padding: EdgeInsets.all(4),
+                            child: Text(
+                              '42',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
                       ),
                     ],

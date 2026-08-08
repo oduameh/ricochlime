@@ -9,9 +9,13 @@ import 'package:ricochlime/utils/shop_items.dart';
 import 'package:ricochlime/utils/stows.dart';
 
 class Bullet extends BodyComponent with ContactCallbacks {
-  Bullet({required this.initialPosition, required this.direction})
-    : assert(direction.y < 0),
-      super(renderBody: false);
+  Bullet({
+    required this.initialPosition,
+    required this.direction,
+    Set<Object>? consumedGates,
+  }) : assert(direction.length > 0),
+       consumedGates = consumedGates ?? {},
+       super(renderBody: false);
 
   /// Radius of the bullet.
   static const radius = 2.0;
@@ -21,6 +25,12 @@ class Bullet extends BodyComponent with ContactCallbacks {
 
   Vector2 initialPosition;
   Vector2 direction;
+
+  /// The gates this bullet has already passed through.
+  ///
+  /// Cloned bullets share the same set,
+  /// so a gate only multiplies a bullet family once.
+  final Set<Object> consumedGates;
 
   @override
   Body createBody() {
@@ -46,10 +56,25 @@ class Bullet extends BodyComponent with ContactCallbacks {
     return world.createBody(bodyDef)..createFixture(fixtureDef);
   }
 
+  /// The maximum age of a bullet in seconds.
+  ///
+  /// Bullets usually remove themselves when they
+  /// fall off the bottom of the screen, but a bullet can
+  /// get stuck bouncing vertically forever. Since bullets
+  /// are fired continuously, stuck bullets are removed
+  /// after [maxAgeSecs] to keep the bullet count bounded.
+  static const maxAgeSecs = 20.0;
+  double _age = 0;
+
   @override
   void update(double dt) {
     super.update(dt);
     if (body.position.y > (game as RicochlimeGame).background.bottomOfIsland) {
+      removeFromParent();
+      return;
+    }
+    _age += dt;
+    if (_age > maxAgeSecs) {
       removeFromParent();
     }
   }

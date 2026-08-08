@@ -25,7 +25,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.adilhanney.ricochlime"
+    namespace = "com.oduameh.ricochlime"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -35,7 +35,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.adilhanney.ricochlime"
+        applicationId = "com.oduameh.ricochlime"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

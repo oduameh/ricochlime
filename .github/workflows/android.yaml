@@ -7,8 +7,6 @@ on:
       - "**"
     branches:
       - "**"
-    paths:
-      - .github/workflows/android.yaml
 
 jobs:
   build-android:

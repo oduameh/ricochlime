@@ -18,7 +18,6 @@ settingsPage:
   sfxVolume(OUTDATED): Дыбыс әсерлерінің көлемі
   showFpsCounter(OUTDATED): FPS есептегішін көрсету
   stylizedPageTransitions(OUTDATED): Стильденген беттердің ауысуы
-  showReflectionInAimGuide(OUTDATED): Мақсат нұсқаулығында рефлексияны көрсетіңіз
   hyperlegibleFont(OUTDATED): Оқуға оңай шрифт
   biggerBullets(OUTDATED): Үлкенірек оқтар
   gameplay(OUTDATED): Ойын барысы
@@ -42,7 +41,6 @@ tutorialPage:
   bounceOffWalls: Қабырғадан ыршыған оқ көбірек шырышқа тие алады.
   tapSpeedUp: Оқ қозғалысын тездету үшін экранды түртіңіз.
   dragAndRelease(OUTDATED): Мақсатқа апару және ату үшін босату арқылы құбыжықтарды жеңіңіз.
-  pointAndClick(OUTDATED): Тінтуірді мақсатқа жылжыту және ату үшін басу арқылы құбыжықтарды жеңіңіз.
   goldMonsters(OUTDATED): Алтын құбыжықты жеңгеннен кейін сіз тиын аласыз.
   greenMonsters(OUTDATED): Жасыл құбыжықты жеңгеннен кейін сіз қосымша оқ аласыз.
   skullLine(OUTDATED): Бас сүйегінің сызығына жеткен құбыжық келесі кезекте оны жеңбесеңіз, ойын аяқталды дегенді білдіреді.

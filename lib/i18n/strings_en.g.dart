@@ -39,18 +39,18 @@ class Translations with BaseTranslations<AppLocale, Translations> {
 	/// en: 'Ricochlime'
 	String get appName => 'Ricochlime';
 
-	late final TranslationsHomePageEn homePage = TranslationsHomePageEn.internal(_root);
-	late final TranslationsPlayPageEn playPage = TranslationsPlayPageEn.internal(_root);
-	late final TranslationsSettingsPageEn settingsPage = TranslationsSettingsPageEn.internal(_root);
-	late final TranslationsGameOverPageEn gameOverPage = TranslationsGameOverPageEn.internal(_root);
-	late final TranslationsRestartGameDialogEn restartGameDialog = TranslationsRestartGameDialogEn.internal(_root);
-	late final TranslationsTutorialPageEn tutorialPage = TranslationsTutorialPageEn.internal(_root);
-	late final TranslationsShopPageEn shopPage = TranslationsShopPageEn.internal(_root);
+	late final Translations$homePage$en homePage = Translations$homePage$en.internal(_root);
+	late final Translations$playPage$en playPage = Translations$playPage$en.internal(_root);
+	late final Translations$settingsPage$en settingsPage = Translations$settingsPage$en.internal(_root);
+	late final Translations$gameOverPage$en gameOverPage = Translations$gameOverPage$en.internal(_root);
+	late final Translations$restartGameDialog$en restartGameDialog = Translations$restartGameDialog$en.internal(_root);
+	late final Translations$tutorialPage$en tutorialPage = Translations$tutorialPage$en.internal(_root);
+	late final Translations$shopPage$en shopPage = Translations$shopPage$en.internal(_root);
 }
 
 // Path: homePage
-class TranslationsHomePageEn {
-	TranslationsHomePageEn.internal(this._root);
+class Translations$homePage$en {
+	Translations$homePage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -70,8 +70,8 @@ class TranslationsHomePageEn {
 }
 
 // Path: playPage
-class TranslationsPlayPageEn {
-	TranslationsPlayPageEn.internal(this._root);
+class Translations$playPage$en {
+	Translations$playPage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -88,8 +88,8 @@ class TranslationsPlayPageEn {
 }
 
 // Path: settingsPage
-class TranslationsSettingsPageEn {
-	TranslationsSettingsPageEn.internal(this._root);
+class Translations$settingsPage$en {
+	Translations$settingsPage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -119,9 +119,6 @@ class TranslationsSettingsPageEn {
 	/// en: 'Allow undoing moves'
 	String get showUndoButton => 'Allow undoing moves';
 
-	/// en: 'Show reflection in aim guide'
-	String get showReflectionInAimGuide => 'Show reflection in aim guide';
-
 	/// en: 'Bigger bullets'
 	String get biggerBullets => 'Bigger bullets';
 
@@ -139,8 +136,8 @@ class TranslationsSettingsPageEn {
 }
 
 // Path: gameOverPage
-class TranslationsGameOverPageEn {
-	TranslationsGameOverPageEn.internal(this._root);
+class Translations$gameOverPage$en {
+	Translations$gameOverPage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -172,8 +169,8 @@ class TranslationsGameOverPageEn {
 }
 
 // Path: restartGameDialog
-class TranslationsRestartGameDialogEn {
-	TranslationsRestartGameDialogEn.internal(this._root);
+class Translations$restartGameDialog$en {
+	Translations$restartGameDialog$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -193,8 +190,8 @@ class TranslationsRestartGameDialogEn {
 }
 
 // Path: tutorialPage
-class TranslationsTutorialPageEn {
-	TranslationsTutorialPageEn.internal(this._root);
+class Translations$tutorialPage$en {
+	Translations$tutorialPage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -203,11 +200,14 @@ class TranslationsTutorialPageEn {
 	/// en: 'Tutorial'
 	String get tutorial => 'Tutorial';
 
-	/// en: 'Defeat the monsters by dragging to aim and releasing to shoot.'
-	String get dragAndRelease => 'Defeat the monsters by dragging to aim and releasing to shoot.';
+	/// en: 'Drag left and right to move your soldier. They shoot automatically!'
+	String get dragAndRelease => 'Drag left and right to move your soldier. They shoot automatically!';
 
-	/// en: 'Defeat the monsters by moving your mouse to aim and clicking to shoot.'
-	String get pointAndClick => 'Defeat the monsters by moving your mouse to aim and clicking to shoot.';
+	/// en: 'Shoot through x2, x3 and +3 gates to multiply your bullets.'
+	String get gates => 'Shoot through x2, x3 and +3 gates to multiply your bullets.';
+
+	/// en: 'Blocks take lots of hits to break. Clear a path before they reach you!'
+	String get blocks => 'Blocks take lots of hits to break. Clear a path before they reach you!';
 
 	/// en: 'After defeating a gold monster, you'll get a coin.'
 	String get goldMonsters => 'After defeating a gold monster, you\'ll get a coin.';
@@ -235,8 +235,8 @@ class TranslationsTutorialPageEn {
 }
 
 // Path: shopPage
-class TranslationsShopPageEn {
-	TranslationsShopPageEn.internal(this._root);
+class Translations$shopPage$en {
+	Translations$shopPage$en.internal(this._root);
 
 	final Translations _root; // ignore: unused_field
 

@@ -34,18 +34,18 @@ class TranslationsKk extends Translations with BaseTranslations<AppLocale, Trans
 
 	// Translations
 	@override String get appName => 'Рикошырыш';
-	@override late final _TranslationsHomePageKk homePage = _TranslationsHomePageKk._(_root);
-	@override late final _TranslationsPlayPageKk playPage = _TranslationsPlayPageKk._(_root);
-	@override late final _TranslationsSettingsPageKk settingsPage = _TranslationsSettingsPageKk._(_root);
-	@override late final _TranslationsGameOverPageKk gameOverPage = _TranslationsGameOverPageKk._(_root);
-	@override late final _TranslationsRestartGameDialogKk restartGameDialog = _TranslationsRestartGameDialogKk._(_root);
-	@override late final _TranslationsTutorialPageKk tutorialPage = _TranslationsTutorialPageKk._(_root);
-	@override late final _TranslationsShopPageKk shopPage = _TranslationsShopPageKk._(_root);
+	@override late final _Translations$homePage$kk homePage = _Translations$homePage$kk._(_root);
+	@override late final _Translations$playPage$kk playPage = _Translations$playPage$kk._(_root);
+	@override late final _Translations$settingsPage$kk settingsPage = _Translations$settingsPage$kk._(_root);
+	@override late final _Translations$gameOverPage$kk gameOverPage = _Translations$gameOverPage$kk._(_root);
+	@override late final _Translations$restartGameDialog$kk restartGameDialog = _Translations$restartGameDialog$kk._(_root);
+	@override late final _Translations$tutorialPage$kk tutorialPage = _Translations$tutorialPage$kk._(_root);
+	@override late final _Translations$shopPage$kk shopPage = _Translations$shopPage$kk._(_root);
 }
 
 // Path: homePage
-class _TranslationsHomePageKk extends TranslationsHomePageEn {
-	_TranslationsHomePageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$homePage$kk extends Translations$homePage$en {
+	_Translations$homePage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -57,8 +57,8 @@ class _TranslationsHomePageKk extends TranslationsHomePageEn {
 }
 
 // Path: playPage
-class _TranslationsPlayPageKk extends TranslationsPlayPageEn {
-	_TranslationsPlayPageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$playPage$kk extends Translations$playPage$en {
+	_Translations$playPage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -69,8 +69,8 @@ class _TranslationsPlayPageKk extends TranslationsPlayPageEn {
 }
 
 // Path: settingsPage
-class _TranslationsSettingsPageKk extends TranslationsSettingsPageEn {
-	_TranslationsSettingsPageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$settingsPage$kk extends Translations$settingsPage$en {
+	_Translations$settingsPage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -82,7 +82,6 @@ class _TranslationsSettingsPageKk extends TranslationsSettingsPageEn {
 	@override String get sfxVolume => 'Дыбыс әсерлерінің көлемі';
 	@override String get showFpsCounter => 'FPS есептегішін көрсету';
 	@override String get stylizedPageTransitions => 'Стильденген беттердің ауысуы';
-	@override String get showReflectionInAimGuide => 'Мақсат нұсқаулығында рефлексияны көрсетіңіз';
 	@override String get hyperlegibleFont => 'Оқуға оңай шрифт';
 	@override String get biggerBullets => 'Үлкенірек оқтар';
 	@override String get gameplay => 'Ойын барысы';
@@ -92,8 +91,8 @@ class _TranslationsSettingsPageKk extends TranslationsSettingsPageEn {
 }
 
 // Path: gameOverPage
-class _TranslationsGameOverPageKk extends TranslationsGameOverPageEn {
-	_TranslationsGameOverPageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$gameOverPage$kk extends Translations$gameOverPage$en {
+	_Translations$gameOverPage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -113,8 +112,8 @@ class _TranslationsGameOverPageKk extends TranslationsGameOverPageEn {
 }
 
 // Path: restartGameDialog
-class _TranslationsRestartGameDialogKk extends TranslationsRestartGameDialogEn {
-	_TranslationsRestartGameDialogKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$restartGameDialog$kk extends Translations$restartGameDialog$en {
+	_Translations$restartGameDialog$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -126,8 +125,8 @@ class _TranslationsRestartGameDialogKk extends TranslationsRestartGameDialogEn {
 }
 
 // Path: tutorialPage
-class _TranslationsTutorialPageKk extends TranslationsTutorialPageEn {
-	_TranslationsTutorialPageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$tutorialPage$kk extends Translations$tutorialPage$en {
+	_Translations$tutorialPage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 
@@ -136,7 +135,6 @@ class _TranslationsTutorialPageKk extends TranslationsTutorialPageEn {
 	@override String get bounceOffWalls => 'Қабырғадан ыршыған оқ көбірек шырышқа тие алады.';
 	@override String get tapSpeedUp => 'Оқ қозғалысын тездету үшін экранды түртіңіз.';
 	@override String get dragAndRelease => 'Мақсатқа апару және ату үшін босату арқылы құбыжықтарды жеңіңіз.';
-	@override String get pointAndClick => 'Тінтуірді мақсатқа жылжыту және ату үшін басу арқылы құбыжықтарды жеңіңіз.';
 	@override String get goldMonsters => 'Алтын құбыжықты жеңгеннен кейін сіз тиын аласыз.';
 	@override String get greenMonsters => 'Жасыл құбыжықты жеңгеннен кейін сіз қосымша оқ аласыз.';
 	@override String get skullLine => 'Бас сүйегінің сызығына жеткен құбыжық келесі кезекте оны жеңбесеңіз, ойын аяқталды дегенді білдіреді.';
@@ -146,8 +144,8 @@ class _TranslationsTutorialPageKk extends TranslationsTutorialPageEn {
 }
 
 // Path: shopPage
-class _TranslationsShopPageKk extends TranslationsShopPageEn {
-	_TranslationsShopPageKk._(TranslationsKk root) : this._root = root, super.internal(root);
+class _Translations$shopPage$kk extends Translations$shopPage$en {
+	_Translations$shopPage$kk._(TranslationsKk root) : this._root = root, super.internal(root);
 
 	final TranslationsKk _root; // ignore: unused_field
 

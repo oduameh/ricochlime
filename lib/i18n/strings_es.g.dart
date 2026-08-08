@@ -34,18 +34,18 @@ class TranslationsEs extends Translations with BaseTranslations<AppLocale, Trans
 
 	// Translations
 	@override String get appName => 'Ricochlime';
-	@override late final _TranslationsHomePageEs homePage = _TranslationsHomePageEs._(_root);
-	@override late final _TranslationsPlayPageEs playPage = _TranslationsPlayPageEs._(_root);
-	@override late final _TranslationsSettingsPageEs settingsPage = _TranslationsSettingsPageEs._(_root);
-	@override late final _TranslationsGameOverPageEs gameOverPage = _TranslationsGameOverPageEs._(_root);
-	@override late final _TranslationsRestartGameDialogEs restartGameDialog = _TranslationsRestartGameDialogEs._(_root);
-	@override late final _TranslationsTutorialPageEs tutorialPage = _TranslationsTutorialPageEs._(_root);
-	@override late final _TranslationsShopPageEs shopPage = _TranslationsShopPageEs._(_root);
+	@override late final _Translations$homePage$es homePage = _Translations$homePage$es._(_root);
+	@override late final _Translations$playPage$es playPage = _Translations$playPage$es._(_root);
+	@override late final _Translations$settingsPage$es settingsPage = _Translations$settingsPage$es._(_root);
+	@override late final _Translations$gameOverPage$es gameOverPage = _Translations$gameOverPage$es._(_root);
+	@override late final _Translations$restartGameDialog$es restartGameDialog = _Translations$restartGameDialog$es._(_root);
+	@override late final _Translations$tutorialPage$es tutorialPage = _Translations$tutorialPage$es._(_root);
+	@override late final _Translations$shopPage$es shopPage = _Translations$shopPage$es._(_root);
 }
 
 // Path: homePage
-class _TranslationsHomePageEs extends TranslationsHomePageEn {
-	_TranslationsHomePageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$homePage$es extends Translations$homePage$en {
+	_Translations$homePage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
@@ -57,8 +57,8 @@ class _TranslationsHomePageEs extends TranslationsHomePageEn {
 }
 
 // Path: playPage
-class _TranslationsPlayPageEs extends TranslationsPlayPageEn {
-	_TranslationsPlayPageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$playPage$es extends Translations$playPage$en {
+	_Translations$playPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
@@ -69,8 +69,8 @@ class _TranslationsPlayPageEs extends TranslationsPlayPageEn {
 }
 
 // Path: settingsPage
-class _TranslationsSettingsPageEs extends TranslationsSettingsPageEn {
-	_TranslationsSettingsPageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$settingsPage$es extends Translations$settingsPage$en {
+	_Translations$settingsPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
@@ -79,7 +79,6 @@ class _TranslationsSettingsPageEs extends TranslationsSettingsPageEn {
 	@override String get sfxVolume => 'Volumen de efectos de sonido';
 	@override String get showFpsCounter => 'Mostrar contador de FPS';
 	@override String get stylizedPageTransitions => 'Transiciones de página estilizadas';
-	@override String get showReflectionInAimGuide => 'Mostrar reflejo en la guía de objetivos.';
 	@override String get hyperlegibleFont => 'Fuente fácil de leer';
 	@override String get biggerBullets => 'balas mas grandes';
 	@override String get gameplay => 'Como se Juega';
@@ -92,8 +91,8 @@ class _TranslationsSettingsPageEs extends TranslationsSettingsPageEn {
 }
 
 // Path: gameOverPage
-class _TranslationsGameOverPageEs extends TranslationsGameOverPageEn {
-	_TranslationsGameOverPageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$gameOverPage$es extends Translations$gameOverPage$en {
+	_Translations$gameOverPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
@@ -113,8 +112,8 @@ class _TranslationsGameOverPageEs extends TranslationsGameOverPageEn {
 }
 
 // Path: restartGameDialog
-class _TranslationsRestartGameDialogEs extends TranslationsRestartGameDialogEn {
-	_TranslationsRestartGameDialogEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$restartGameDialog$es extends Translations$restartGameDialog$en {
+	_Translations$restartGameDialog$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
@@ -126,14 +125,13 @@ class _TranslationsRestartGameDialogEs extends TranslationsRestartGameDialogEn {
 }
 
 // Path: tutorialPage
-class _TranslationsTutorialPageEs extends TranslationsTutorialPageEn {
-	_TranslationsTutorialPageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$tutorialPage$es extends Translations$tutorialPage$en {
+	_Translations$tutorialPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 
 	// Translations
 	@override String get dragAndRelease => 'Derrota a los monstruos arrastrándolos para apuntar y soltándolos para disparar.';
-	@override String get pointAndClick => 'Derrota a los monstruos moviendo el mouse para apuntar y haciendo clic para disparar.';
 	@override String get goldMonsters => 'Después de derrotar a un monstruo dorado, obtendrás una moneda.';
 	@override String get greenMonsters => 'Después de derrotar a un monstruo verde, recibirás una bala extra.';
 	@override String get skullLine => 'Un monstruo que llega a la línea del cráneo significa que el juego se acaba si no lo derrotas en el siguiente turno.';
@@ -146,8 +144,8 @@ class _TranslationsTutorialPageEs extends TranslationsTutorialPageEn {
 }
 
 // Path: shopPage
-class _TranslationsShopPageEs extends TranslationsShopPageEn {
-	_TranslationsShopPageEs._(TranslationsEs root) : this._root = root, super.internal(root);
+class _Translations$shopPage$es extends Translations$shopPage$en {
+	_Translations$shopPage$es._(TranslationsEs root) : this._root = root, super.internal(root);
 
 	final TranslationsEs _root; // ignore: unused_field
 

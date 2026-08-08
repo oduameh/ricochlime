@@ -13,7 +13,6 @@ settingsPage:
   sfxVolume(OUTDATED): Volumen de efectos de sonido
   showFpsCounter(OUTDATED): Mostrar contador de FPS
   stylizedPageTransitions(OUTDATED): Transiciones de página estilizadas
-  showReflectionInAimGuide(OUTDATED): Mostrar reflejo en la guía de objetivos.
   hyperlegibleFont(OUTDATED): Fuente fácil de leer
   biggerBullets(OUTDATED): balas mas grandes
   gameplay(OUTDATED): Como se Juega
@@ -39,7 +38,6 @@ restartGameDialog:
   yesImSure(OUTDATED): ¡Sí estoy seguro!
 tutorialPage:
   dragAndRelease(OUTDATED): Derrota a los monstruos arrastrándolos para apuntar y soltándolos para disparar.
-  pointAndClick(OUTDATED): Derrota a los monstruos moviendo el mouse para apuntar y haciendo clic para disparar.
   goldMonsters(OUTDATED): Después de derrotar a un monstruo dorado, obtendrás una moneda.
   greenMonsters(OUTDATED): Después de derrotar a un monstruo verde, recibirás una bala extra.
   skullLine(OUTDATED): Un monstruo que llega a la línea del cráneo significa que el juego se acaba si no lo derrotas en el siguiente turno.

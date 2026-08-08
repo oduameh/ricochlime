@@ -3,7 +3,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:nes_ui/nes_ui.dart';
 import 'package:ricochlime/i18n/strings.g.dart';
-import 'package:ricochlime/nes/ricochlime_icons.dart';
 import 'package:ricochlime/utils/stows.dart';
 import 'package:ricochlime/utils/version.dart';
 
@@ -139,40 +138,6 @@ class SettingsPage extends StatelessWidget {
                   );
                 },
                 child: Text(t.settingsPage.showUndoButton),
-              ),
-            ),
-          ),
-
-          // Whether to show reflection in the aim guide
-          Padding(
-            padding: listTilePadding,
-            child: NesContainer(
-              padding: EdgeInsets.zero,
-              child: ValueListenableBuilder(
-                valueListenable: stows.showReflectionInAimGuide,
-                builder: (context, _, child) {
-                  return MergeSemantics(
-                    child: ListTile(
-                      title: child,
-                      leading: NesIcon(
-                        iconData: stows.showReflectionInAimGuide.value
-                            ? RicochlimeIcons.aimGuideWithReflection
-                            : RicochlimeIcons.aimGuideWithoutReflection,
-                      ),
-                      tileColor: listTileColor,
-                      shape: listTileShape,
-                      contentPadding: listTileContentPadding,
-                      trailing: NesCheckBox(
-                        value: stows.showReflectionInAimGuide.value,
-                        onChange: (value) =>
-                            stows.showReflectionInAimGuide.value = value,
-                      ),
-                      onTap: () => stows.showReflectionInAimGuide.value =
-                          !stows.showReflectionInAimGuide.value,
-                    ),
-                  );
-                },
-                child: Text(t.settingsPage.showReflectionInAimGuide),
               ),
             ),
           ),

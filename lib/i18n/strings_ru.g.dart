@@ -34,18 +34,18 @@ class TranslationsRu extends Translations with BaseTranslations<AppLocale, Trans
 
 	// Translations
 	@override String get appName => 'Рикошлим';
-	@override late final _TranslationsHomePageRu homePage = _TranslationsHomePageRu._(_root);
-	@override late final _TranslationsPlayPageRu playPage = _TranslationsPlayPageRu._(_root);
-	@override late final _TranslationsSettingsPageRu settingsPage = _TranslationsSettingsPageRu._(_root);
-	@override late final _TranslationsGameOverPageRu gameOverPage = _TranslationsGameOverPageRu._(_root);
-	@override late final _TranslationsRestartGameDialogRu restartGameDialog = _TranslationsRestartGameDialogRu._(_root);
-	@override late final _TranslationsTutorialPageRu tutorialPage = _TranslationsTutorialPageRu._(_root);
-	@override late final _TranslationsShopPageRu shopPage = _TranslationsShopPageRu._(_root);
+	@override late final _Translations$homePage$ru homePage = _Translations$homePage$ru._(_root);
+	@override late final _Translations$playPage$ru playPage = _Translations$playPage$ru._(_root);
+	@override late final _Translations$settingsPage$ru settingsPage = _Translations$settingsPage$ru._(_root);
+	@override late final _Translations$gameOverPage$ru gameOverPage = _Translations$gameOverPage$ru._(_root);
+	@override late final _Translations$restartGameDialog$ru restartGameDialog = _Translations$restartGameDialog$ru._(_root);
+	@override late final _Translations$tutorialPage$ru tutorialPage = _Translations$tutorialPage$ru._(_root);
+	@override late final _Translations$shopPage$ru shopPage = _Translations$shopPage$ru._(_root);
 }
 
 // Path: homePage
-class _TranslationsHomePageRu extends TranslationsHomePageEn {
-	_TranslationsHomePageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$homePage$ru extends Translations$homePage$en {
+	_Translations$homePage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
@@ -57,8 +57,8 @@ class _TranslationsHomePageRu extends TranslationsHomePageEn {
 }
 
 // Path: playPage
-class _TranslationsPlayPageRu extends TranslationsPlayPageEn {
-	_TranslationsPlayPageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$playPage$ru extends Translations$playPage$en {
+	_Translations$playPage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
@@ -69,8 +69,8 @@ class _TranslationsPlayPageRu extends TranslationsPlayPageEn {
 }
 
 // Path: settingsPage
-class _TranslationsSettingsPageRu extends TranslationsSettingsPageEn {
-	_TranslationsSettingsPageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$settingsPage$ru extends Translations$settingsPage$en {
+	_Translations$settingsPage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
@@ -80,7 +80,6 @@ class _TranslationsSettingsPageRu extends TranslationsSettingsPageEn {
 	@override String get accessibility => 'Доступность';
 	@override String get hyperlegibleFont => 'Большой шрифт';
 	@override String get showUndoButton => 'Разрешить отмену бросков';
-	@override String get showReflectionInAimGuide => 'Показывать отскок в прицельной траектории';
 	@override String get biggerBullets => 'Большие мячики';
 	@override String get maxFps => 'Максимальный FPS';
 	@override String get appInfo => 'О программе';
@@ -92,8 +91,8 @@ class _TranslationsSettingsPageRu extends TranslationsSettingsPageEn {
 }
 
 // Path: gameOverPage
-class _TranslationsGameOverPageRu extends TranslationsGameOverPageEn {
-	_TranslationsGameOverPageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$gameOverPage$ru extends Translations$gameOverPage$en {
+	_Translations$gameOverPage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
@@ -113,8 +112,8 @@ class _TranslationsGameOverPageRu extends TranslationsGameOverPageEn {
 }
 
 // Path: restartGameDialog
-class _TranslationsRestartGameDialogRu extends TranslationsRestartGameDialogEn {
-	_TranslationsRestartGameDialogRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$restartGameDialog$ru extends Translations$restartGameDialog$en {
+	_Translations$restartGameDialog$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
@@ -126,15 +125,14 @@ class _TranslationsRestartGameDialogRu extends TranslationsRestartGameDialogEn {
 }
 
 // Path: tutorialPage
-class _TranslationsTutorialPageRu extends TranslationsTutorialPageEn {
-	_TranslationsTutorialPageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$tutorialPage$ru extends Translations$tutorialPage$en {
+	_Translations$tutorialPage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
 	// Translations
 	@override String get tutorial => 'Как играть';
 	@override String get dragAndRelease => 'Defeat the monsters by dragging to aim and releasing to shoot.';
-	@override String get pointAndClick => 'Defeat the monsters by moving your mouse to aim and clicking to shoot.';
 	@override String get goldMonsters => 'Убив золотого монстра получаете монетку.';
 	@override String get greenMonsters => 'Убив зелёного монстра получаете дополнительный мячик.';
 	@override String get bounceOffWalls => 'Bounce your shots off the walls to hit the most monsters.';
@@ -146,8 +144,8 @@ class _TranslationsTutorialPageRu extends TranslationsTutorialPageEn {
 }
 
 // Path: shopPage
-class _TranslationsShopPageRu extends TranslationsShopPageEn {
-	_TranslationsShopPageRu._(TranslationsRu root) : this._root = root, super.internal(root);
+class _Translations$shopPage$ru extends Translations$shopPage$en {
+	_Translations$shopPage$ru._(TranslationsRu root) : this._root = root, super.internal(root);
 
 	final TranslationsRu _root; // ignore: unused_field
 
